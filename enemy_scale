@@ -1,0 +1,221 @@
+# HEALTH CHANGES
+
+
+# Global Value Scaling
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler.Att_UniversalBalanceScaler:BP_ConstantValueResolver_C_0,Value,0,,(BaseValueConstant=1.080)
+
+# Enemies Deal Less Damage Per Level (Credit to Grimm)
+#SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_AdditionalDamagePerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,-0.006
+
+# Increase enemy health per level
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_AdditionalHealthPerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,0.075
+
+# Increasing Enemy Health in NVHM
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,Playthrough1_GlobalHealthScaler,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,2.25
+
+# Increasing Enemy Health in TVHM
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,Playthrough2_GlobalHealthScaler,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,7.25
+
+#LITVHM2.0
+SparkPatchEntry,(1,2,0,),/Game/Enemies/_Shared/_Design/Balance/Table_DefaultEnemyBalance.Table_DefaultEnemyBalance,Default_PT2,LootRarityModifier_26_95E080A844632E94012641B3BA7B57DC,0,,DataTableValue=(DataTable=Datatable'"/Game/PatchDLC/Ixora/Gear/Weapons/DataTable_WeaponBalance_Ixora.DataTable_WeaponBalance_Ixora"',RowName="IceAge",ValueName="Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=100.0)))
+
+# Increasing Enemy Damage in NVHM/TVHM
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.OnePlayer_PT1,0,,(BaseValueConstant=2.35)
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.TwoPlayers_PT1,0,,(BaseValueConstant=2.55)
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.ThreePlayers_PT1,0,,(BaseValueConstant=2.85)
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.FourPlayers_PT1,0,,(BaseValueConstant=3.15)
+
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.OnePlayer_PT2,0,,(BaseValueConstant=3.15)
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.TwoPlayers_PT2,0,,(BaseValueConstant=3.55)
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.ThreePlayers_PT2,0,,(BaseValueConstant=4)
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.FourPlayers_PT2,0,,(BaseValueConstant=4.15)
+
+
+# fix procurer health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Zealot_Badass_Procurer),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists./Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists,Zealot_Badass_Procurer,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Zealot_Badass_Procurer),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists./Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists,Zealot_Badass_Procurer,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,3.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Zealot_Badass_Procurer),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists./Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists,Zealot_Badass_Procurer,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,3.5
+
+# zealot bad
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Zealot_Badass),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists./Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists,Zealot_Badass_Procurer,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Zealot_Badass),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists./Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists,Zealot_Badass_Procurer,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,2.7
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Zealot_Badass),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists./Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists,Zealot_Badass_Procurer,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,2.7
+
+# Skag Size
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SkagBadass),/Game/Enemies/Skag/Badass/_Design/Character/BPChar_SkagBadass.Default__BPChar_SkagBadass_C:CharacterMesh0,RelativeScale3D,0,,(X=2.5,Y=2.5,Z=2.5)
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_RakkQueen),/Game/Enemies/Rakk/Queen/_Design/Character/BPChar_RakkQueen.Default__BPChar_RakkQueen_C:CharacterMesh0,RelativeScale3D,0,,(X=5,Y=5,Z=5)
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_RakkQueen),/Game/Enemies/Rakk/Queen/_Design/Character/BPChar_RakkQueen.BPChar_RakkQueen:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_VeryRare.ItemPool_Guns_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_04_VeryRare.ItemPool_Shields_04_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_Guns_All_Ixora2.ItemPool_Guns_All_Ixora2"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary.ItemPool_Guns_Legendary"',PoolProbability=(BaseValueConstant=0.45)))
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SkagAlpha),/Game/Enemies/Skag/Alpha/_Design/Character/BPChar_SkagAlpha.Default__BPChar_SkagAlpha_C:CharacterMesh0,RelativeScale3D,0,,(X=1.4,Y=1.4,Z=1.4)
+
+# Decrease Badass Psycho Health Primary
+SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoBadass),/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance.Table_Psycho_Balance,Psycho_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3
+
+# Decrease Badass Psycho Health Secondary
+SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoBadass),/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance.Table_Psycho_Balance,Psycho_Badass,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622F49,0,,1.5
+
+# LOWERING TRAUNT HEALTH
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Traunt),/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy_Unique.Table_Balance_Heavy_Unique,Heavy_Traunt,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,9.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Traunt),/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy_Unique.Table_Balance_Heavy_Unique,Heavy_Traunt,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,15
+
+
+#GG HEALTH
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Punk_Bounty01a),/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk_Unique.Table_Balance_Punk_Unique,Punk_Bounty02,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Punk_Bounty01b),/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk_Unique.Table_Balance_Punk_Unique,Punk_Bounty01,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Punk_Bounty01c),/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk_Unique.Table_Balance_Punk_Unique,Punk_Bounty01,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Punk_Bounty01d),/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk_Unique.Table_Balance_Punk_Unique,Punk_Bounty02,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2
+
+# Decrease Tink Badass Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_TinkBadass),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink.Table_Balance_Tink,Tink_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3
+SparkCharacterLoadedEntry,(1,2,0,BPChar_TinkBadass),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink.Table_Balance_Tink,Tink_Badass,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1
+SparkCharacterLoadedEntry,(1,2,0,BPChar_TinkBadass),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink.Table_Balance_Tink,Tink_Badass,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1
+
+# Decrease Fabricator Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_FabrikatorBasic),/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator.Table_Balance_Fabrikator,Fabrikator,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,15
+SparkCharacterLoadedEntry,(1,2,0,BPChar_FabrikatorBasic),/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator.Table_Balance_Fabrikator,Fabrikator,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,15
+SparkCharacterLoadedEntry,(1,2,0,BPChar_FabrikatorBasic),/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator.Table_Balance_Fabrikator,FabrikatorPT2,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,15
+SparkCharacterLoadedEntry,(1,2,0,BPChar_FabrikatorBasic),/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator.Table_Balance_Fabrikator,FabrikatorPT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,15
+
+
+# Decrease Badass NOG health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBadass),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1.85
+SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBadass),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1.85
+SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBadass),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1
+
+# Decrease Tink Badass Armoured Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_TinkBadassArmored),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink.Table_Balance_Tink,Tink_BadassArmored,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3
+SparkCharacterLoadedEntry,(1,2,0,BPChar_TinkBadassArmored),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink.Table_Balance_Tink,Tink_BadassArmored,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,2
+SparkCharacterLoadedEntry,(1,2,0,BPChar_TinkBadassArmored),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink.Table_Balance_Tink,Tink_BadassArmored,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1
+
+# Decrease Evil Brick and Mordecai Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DarkBrick),/Alisma/Enemies/DarkVH/DarkBrick/_Design/Balance/Table_Balance_DarkBrick_PT1.Table_Balance_DarkBrick_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,20
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DarkMordecai),/Alisma/Enemies/DarkVH/DarkMordecai/_Design/Balance/Table_Balance_DarkMordecai.Table_Balance_DarkMordecai,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,15
+
+# Decrease Evil Lilith Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DarkLilith),/Alisma/Enemies/DarkVH/DarkLilith/_Design/Balance/Table_Balance_DarkLilith_PT1.Table_Balance_DarkLilith_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,30
+# Decrease Evil Lilith Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DarkLilith),/Alisma/Enemies/DarkVH/DarkLilith/_Design/Balance/Table_Balance_DarkLilith_PT1.Table_Balance_DarkLilith_PT1,Default,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,35
+
+# Decrease Benedict Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DrBenedict),/Alisma/Enemies/DrBenedict/_Shared/_Design/Balance/Table_Balance_DrBenedict_PT1.Table_Balance_DrBenedict_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,40
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DrBenedict),/Alisma/Enemies/DrBenedict/_Shared/_Design/Balance/Table_Balance_DrBenedict_PT1.Table_Balance_DrBenedict_PT1,Basic,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,25
+
+# Decrease Wendigo Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Wendigo),/Hibiscus/Enemies/Wendigo/Design/Balance/Table_Balance_Wendigo.Table_Balance_Wendigo,Default,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,75
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Wendigo),/Hibiscus/Enemies/Wendigo/Design/Balance/Table_Balance_Wendigo.Table_Balance_Wendigo,PT1,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,75
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Wendigo),/Hibiscus/Enemies/Wendigo/Design/Balance/Table_Balance_Wendigo.Table_Balance_Wendigo,PT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,85
+
+
+# Decrease Vincent Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Vincent),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Vincent,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,10
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Vincent),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Vincent,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,10
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Vincent),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Vincent,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,10
+
+# Decrease Punk Badass Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_PunkBadass),/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk.Table_Balance_Punk,Punk_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2.25
+
+
+#RBot health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_RagingBot_Yvan),/Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Balance/Table_Balance_RagingBot.Table_Balance_RagingBot,RagingBot_Yvan,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2
+SparkCharacterLoadedEntry,(1,2,0,BPChar_RagingBot_Yvan),/Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Balance/Table_Balance_RagingBot.Table_Balance_RagingBot,RagingBot_Yvan,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,3
+
+
+
+# Decrease Badass Skag Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagBadass),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance.Table_Skag_Balance,Skag_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,6.15
+
+# Decrease Chubby Skag Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagChubby),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance.Table_Skag_Balance,Skag_Chubby,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2.5
+
+
+# Decrease Demoskaggon Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1.65
+
+# Decrease Skrakk Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Rakk_HuntSkrakk),/Game/Enemies/Rakk/_Shared/_Design/Balance/Table_Balance_Rakk_Unique.Table_Balance_Rakk_Unique,Rakk_Skrakk01_Hunt,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,7.65
+
+# Decrease Phoenix Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Rakk_Hunt01),/Game/Enemies/Rakk/_Shared/_Design/Balance/Table_Balance_Rakk_Unique.Table_Balance_Rakk_Unique,Rakk_Rakk01_Hunt,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1.5
+
+# Decrease Rampager Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/_Shared/_Design/Balance/Table_Balance_PromBoss_PT1.Table_Balance_PromBoss_PT1,Rampager,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,80.0
+
+
+# Decrease Graveward Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_EdenBoss),/Game/Enemies/EdenBoss/_Shared/_Design/Balance/Table_Balance_EdenBoss_PT1.Table_Balance_EdenBoss_PT1,EdenBoss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,165.0
+
+# Increase Graveward Damage
+SparkCharacterLoadedEntry,(1,2,0,BPChar_EdenBoss),/Game/Enemies/EdenBoss/_Shared/_Design/Balance/Table_Balance_EdenBoss_PT1.Table_Balance_EdenBoss_PT1,EdenBoss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,15.0
+
+# Decrease Badass Varkid Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidBadass),/Game/Enemies/Varkid/_Shared/_Design/Balance/Table_Varkid_Balance.Table_Varkid_Balance,Varkid_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2.95
+
+# COV ENEMIES HAVE LESS ROCKET LAUNCHERS (Credit to Grimm)
+
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Enemies/_Shared/_Design/ItemPools/ItemPool_COVEnemyUse_HeavyWeapons.ItemPool_COVEnemyUse_HeavyWeapons,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_ForAI/Balance_HW_COV_AI_UseONLY.Balance_HW_COV_AI_UseONLY,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_ForAI/Balance_HW_COV_AI_UseONLY.Balance_HW_COV_AI_UseONLY"',Weight=(BaseValueConstant=0.5,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/AI/Balance_AR_VLA_AI.Balance_AR_VLA_AI,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/AI/Balance_AR_VLA_AI.Balance_AR_VLA_AI"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/AI/Balance_PS_JAK_AI.Balance_PS_JAK_AI,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/AI/Balance_PS_JAK_AI.Balance_PS_JAK_AI"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/AI/Balance_SG_HYP_AI.Balance_SG_HYP_AI,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/AI/Balance_SG_HYP_AI.Balance_SG_HYP_AI"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/AI/Balance_SM_DAHL_AI.Balance_SM_DAHL_AI,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/AI/Balance_SM_DAHL_AI.Balance_SM_DAHL_AI"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/AI/Balance_SR_DAL_AI.Balance_SR_DAL_AI,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/AI/Balance_SR_DAL_AI.Balance_SR_DAL_AI"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)))
+
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Enemies/Punk_Female/Badass/_Design/Weapon/ItemPools/ItemPool_BadassPunk_HeavyWeapons.ItemPool_BadassPunk_HeavyWeapons,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_ForAI/Balance_HW_COV_AI_UseONLY.Balance_HW_COV_AI_UseONLY,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_ForAI/Balance_HW_COV_AI_UseONLY.Balance_HW_COV_AI_UseONLY"',Weight=(BaseValueConstant=0.5,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/AI/Balance_AR_VLA_AI.Balance_AR_VLA_AI,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/AI/Balance_AR_VLA_AI.Balance_AR_VLA_AI"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/AI/Balance_PS_JAK_AI.Balance_PS_JAK_AI,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/AI/Balance_PS_JAK_AI.Balance_PS_JAK_AI"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/AI/Balance_SG_HYP_AI.Balance_SG_HYP_AI,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/AI/Balance_SG_HYP_AI.Balance_SG_HYP_AI"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/AI/Balance_SM_DAHL_AI.Balance_SM_DAHL_AI,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/AI/Balance_SM_DAHL_AI.Balance_SM_DAHL_AI"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/AI/Balance_SR_DAL_AI.Balance_SR_DAL_AI,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/AI/Balance_SR_DAL_AI.Balance_SR_DAL_AI"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)))
+
+
+# Decrease Punk Badass Armored
+SparkCharacterLoadedEntry,(1,2,0,BPChar_PunkBadassArmored),/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk.Table_Balance_Punk,Punk_BadassArmored,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2.25
+SparkPatchEntry,(1,2,0,),/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk.Table_Balance_Punk,Punk_BadassArmored,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,2.5
+
+# Buffing Eista Invincible Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Hibiscus/NonPlayerCharacters/_Design/Table_Balance_HibiscusNPC.Table_Balance_HibiscusNPC,Eista_Invincible,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,50
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Hibiscus/NonPlayerCharacters/_Design/Table_Balance_HibiscusNPC.Table_Balance_HibiscusNPC,Eista_Invincible,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,50
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Hibiscus/NonPlayerCharacters/_Design/Table_Balance_HibiscusNPC.Table_Balance_HibiscusNPC,Eista_Invincible,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,50
+
+# Buffing Eista Invincible Damage
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Hibiscus/NonPlayerCharacters/_Design/Table_Balance_HibiscusNPC.Table_Balance_HibiscusNPC,Eista_Invincible,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,18.5
+
+# Decreasing Tom and Xam health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LostTwo_BigBro),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_LostOneBig,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,10
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LostTwo_BigBro),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_LostOneBig,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,10
+
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LostTwo_ToughBro),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_LostOneTougho,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,10
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LostTwo_ToughBro),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_LostOneTough,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,10
+
+# Decreasing Anointed Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_Anointed),/Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon.Table_Balance_Goon,Goon_Anointed,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_Anointed),/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance.Table_Psycho_Balance,Psycho_Anointed,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_Anointed),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink.Table_Balance_Tink,Tink_Anointed,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,4.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_Anointed),/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk.Table_Balance_Punk,Punk_Anointed,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_Anointed),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath.Table_Balance_Goliath,Anointed,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,4.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_Anointed),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance.Table_Enforcer_Balance,Enforcer_Anointed,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,4
+
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_Anointed),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance.Table_Enforcer_Balance,Enforcer_Anointed,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,4
+
+# Decreasing Badass Constructor Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Constructor),/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/Table_Balance_Constructor.Table_Balance_Constructor,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Constructor),/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/Table_Balance_Constructor.Table_Balance_Constructor,BasicPT2,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3
+
+# Decreasing Badass Loader Health PT1
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LoaderBadass),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_PT1.Table_Balance_Loader_PT1,Loader_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,7.25
+
+# Decreasing Badass Loader Health PT2
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LoaderBadass),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_PT2.Table_Balance_Loader_PT2,Loader_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,8.75
+
+# Decreasing Loot Bot Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ServiceBot_LOOT),/Game/Enemies/ServiceBot/_Shared/_Design/Balance/Table_Balance_ServiceBot.Table_Balance_ServiceBot,ServiceBot_LOOT,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3
+
+# Decreasing Enforcer Badass Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Enforcer_Badass),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance.Table_Enforcer_Balance,Enforcer_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1.15
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Enforcer_Badass),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance.Table_Enforcer_Balance,Enforcer_Badass,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1.25
+
+# Decreasing Frontrunner Badass Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Frontrunner_Badass),/Game/Enemies/Frontrunner/_Shared/_Design/Balance/Table_Frontrunner_Balance.Table_Frontrunner_Balance,Fronttunner_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Frontrunner_Badass),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Frontrunner_Balance.Table_Frontrunner_Balance,Fronttunner_Badass,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,2
+
+# Decreasing Heavy Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Gunner),/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy.Table_Balance_Heavy,Heavy_Gunner,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Pyrotech),/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy.Table_Balance_Heavy,Heavy_Gunner,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Powerhouse),/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy.Table_Balance_Heavy,Heavy_Powerhouse,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Icebreaker),/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy.Table_Balance_Heavy,Heavy_Icebreaker,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Acidrain),/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy.Table_Balance_Heavy,Heavy_Acidrain,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Badass),/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy.Table_Balance_Heavy,Heavy_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1.5
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Loot),/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy.Table_Balance_Heavy,Heavy_Loot,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2.0
