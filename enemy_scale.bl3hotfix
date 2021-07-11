@@ -12,7 +12,7 @@ SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Att_UniversalBal
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_AdditionalHealthPerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,0.075
 
 # Increasing Enemy Health in NVHM
-SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,Playthrough1_GlobalHealthScaler,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,2.25
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,Playthrough1_GlobalHealthScaler,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,1.50
 
 # Increasing Enemy Health in TVHM
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,Playthrough2_GlobalHealthScaler,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,7.25
@@ -22,8 +22,8 @@ SparkPatchEntry,(1,2,0,),/Game/Enemies/_Shared/_Design/Balance/Table_DefaultEnem
 
 # Increasing Enemy Damage in NVHM/TVHM
 
-SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.OnePlayer_PT1,0,,(BaseValueConstant=2.35)
-SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.TwoPlayers_PT1,0,,(BaseValueConstant=2.55)
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.OnePlayer_PT1,0,,(BaseValueConstant=1.65)
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.TwoPlayers_PT1,0,,(BaseValueConstant=1.85)
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.ThreePlayers_PT1,0,,(BaseValueConstant=2.85)
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.FourPlayers_PT1,0,,(BaseValueConstant=3.15)
 
