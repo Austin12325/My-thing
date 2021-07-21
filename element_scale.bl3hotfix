@@ -7,10 +7,10 @@
 ###
 
 #Fire
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Fire_7_1FDBC8F84F8FC5AB340FF5A2F6380A54,0,,1
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Fire_7_1FDBC8F84F8FC5AB340FF5A2F6380A54,0,,10.0
 #Shock
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Shock_8_684654654B332D94359F79BEB2DB90AA,0,,1.3
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Shock_8_684654654B332D94359F79BEB2DB90AA,0,,10.0
 #Corrosive
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Corrosive_9_FCB69C7740260C055C8D32B7E96603D1,0,,1.8
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Corrosive_9_FCB69C7740260C055C8D32B7E96603D1,0,,10.0
 #Rad
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Radiation_13_2500317646FAD2F4916D158835B29E83,0,,1.4
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Radiation_13_2500317646FAD2F4916D158835B29E83,0,,10.0
