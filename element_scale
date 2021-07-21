@@ -1,0 +1,16 @@
+###
+### Name: Elements Dots Overhaul
+### Author: Grimm
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+#Fire
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Fire_7_1FDBC8F84F8FC5AB340FF5A2F6380A54,0,,1
+#Shock
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Shock_8_684654654B332D94359F79BEB2DB90AA,0,,1.3
+#Corrosive
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Corrosive_9_FCB69C7740260C055C8D32B7E96603D1,0,,1.8
+#Rad
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Radiation_13_2500317646FAD2F4916D158835B29E83,0,,1.4
