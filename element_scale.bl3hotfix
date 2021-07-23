@@ -25,7 +25,7 @@ SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_Health
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,CorrosiveModifier,0,,1.0
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,CryoModifier,0,,1.0
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,FireModifier,0,,1.0
-SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,ShockModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,ShockModifier,0,,99
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,RadiationModifier,0,,1.0
 
 
