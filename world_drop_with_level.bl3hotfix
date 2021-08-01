@@ -132,3 +132,11 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/RarityWeighting/Att_Ra
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_02_Uncommon.Att_RarityWeight_02_Uncommon:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
+# Whites
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_01_Common.Att_RarityWeight_01_Common,ValueResolver,0,,SimpleMathValueResolver'/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_01_Common.Att_RarityWeight_01_Common:ValueResolver_SimpleMathValueResolver'
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_01_Common.Att_RarityWeight_01_Common:ValueResolver_SimpleMathValueResolver,ValueA,0,,(BaseValueConstant=1,BaseValueAttribute=/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_02_Uncommon.Att_RarityWeight_02_Uncommon,BaseValueScale=50)
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_01_Common.Att_RarityWeight_01_Common:ValueResolver_SimpleMathValueResolver,ValueB,0,,(BaseValueConstant=1,BaseValueAttribute=/Game/GameData/Attributes/Att_GameStage.Att_GameStage,BaseValueScale=5.0)
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_01_Common.Att_RarityWeight_01_Common:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
