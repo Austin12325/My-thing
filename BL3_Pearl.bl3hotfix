@@ -13,7 +13,7 @@ SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.Rar
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Streaming/Data/RarityData_MoxxiDrink.RarityData_MoxxiDrink,RarityLifeSpanType,0,,EDropLifeSpanType::DROP_LiveForever
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Streaming/Data/RarityData_MoxxiDrink.RarityData_MoxxiDrink,RaritySortValue,0,,7
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityColorOutline,0,,(r=0.020,g=0.978,b=0.882,a=1)
-### SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityFrameName,0,,Mission
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityFrameName,0,,Mission
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityDisplayname,0,,PEARLESCENT
 
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/Foil/PS_ItemLocatorStick_Foil_Rare.PS_ItemLocatorStick_Foil_Rare
