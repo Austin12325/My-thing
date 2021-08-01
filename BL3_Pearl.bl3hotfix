@@ -379,3 +379,7 @@ SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_S
 
 # Modifying the Krakatoa Material
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Krakatoa/Parts/Part_MAL_SR_Material_Krakatoa.Part_MAL_SR_Material_Krakatoa,AspectList.AspectList[0].Object..Material,0,,/Game/Gear/Weapons/SMGs/Dahl/_Shared/Model/Materials/Unique/MI_SMG_Dahl_Hellfire.MI_SMG_Dahl_Hellfire
+
+# Lower drop rate of the pearls
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,Common,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D190,0,,-5.5
+
