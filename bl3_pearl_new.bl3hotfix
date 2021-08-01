@@ -649,5 +649,61 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/TranFusion/Balan
 
 
 
+### Loot enemy pool   
+# Giving the pool to the Jabber Thieves
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ApeLoot),/Game/Enemies/Ape/Loot/_Design/Character/BPChar_ApeLoot.BPChar_ApeLoot_C:AIBalanceState_GEN_VARIABLE,bOverrideDropOnDeathItemPools,0,,true
+
+# Giving the pool to the Jabber Thieves
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ApeLoot),/Game/Enemies/Ape/Loot/_Design/Character/BPChar_ApeLoot.BPChar_ApeLoot_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack"',PoolProbability=(BaseValueConstant=0.4),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=30)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large"',PoolProbability=(BaseValueConstant=0.5),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=22)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Currency/ItemPool_Money_SlotMachine_TripleRoller.ItemPool_Money_SlotMachine_TripleRoller"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/PatchDLC/Ixora2/InteractiveObjects/DiscoveryIO/ItemPool_Eridium500.ItemPool_Eridium500"',PoolProbability=(BaseValueConstant=0.075)))
+
+# NEW TINK POOL
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_TestTwo.ItemPool_Pistols_TestTwo,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/ConferenceCall/Balance/Balance_SG_HYP_ConferenceCall.Balance_SG_HYP_ConferenceCall,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/ConferenceCall/Balance/Balance_SG_HYP_ConferenceCall.Balance_SG_HYP_ConferenceCall"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Artifacts/_Design/BalanceDefs/InvBalD_Artifact_05_Legendary.InvBalD_Artifact_05_Legendary,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Artifacts/_Design/BalanceDefs/InvBalD_Artifact_05_Legendary.InvBalD_Artifact_05_Legendary"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)))
+
+# Creating a pool for the Shiny Grogs
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_TestTwo.ItemPool_Pistols_TestTwo,Quantity.AttributeInitializer,0,,None
+
+# Giving the pool to the Shiny Grogs [PT1]
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SaurianShiny),/Game/Enemies/Saurian/Shiny/_Design/Character/BPChar_SaurianShiny.BPChar_SaurianShiny_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_VeryRare.ItemPool_Guns_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_04_VeryRare.ItemPool_Shields_04_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',PoolProbability=(BaseValueConstant=0.5)))
+
+
+# Creating a pool for the Loot Bots
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_Test.ItemPool_Artifacts_Test,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/RebellYell/Balance/Balance_ATL_AR_RebelYell.Balance_ATL_AR_RebelYell,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/RebellYell/Balance/Balance_ATL_AR_RebelYell.Balance_ATL_AR_RebelYell"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)),(InventoryBalanceData=/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Hellshock/Balance/Balance_PS_MAL_Hellshock.Balance_PS_MAL_Hellshock,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Hellshock/Balance/Balance_PS_MAL_Hellshock.Balance_PS_MAL_Hellshock"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)))
+
+
+
+# Creating a pool for the Loot Bots
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_Test.ItemPool_Artifacts_Test,Quantity.AttributeInitializer,0,,None
+
+# Giving the pool to the Loot Bots
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ServiceBot_LOOT),/Game/Enemies/ServiceBot/LOOT/_Design/Character/BPChar_ServiceBot_LOOT.BPChar_ServiceBot_LOOT:OakLootable_GEN_VARIABLE,BalanceData,0,,None
+
+
+
+# Giving the pool to the spiderant
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpiderantCoffer),/Game/Enemies/Spiderant/Coffer/_Design/Character/BPChar_SpiderantCoffer.BPChar_SpiderantCoffer_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_VeryRare.ItemPool_Guns_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_04_VeryRare.ItemPool_Shields_04_VeryRare"',PoolProbability=(BaseValueConstant=0.3)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_04_VeryRare.ItemPool_GrenadeMods_04_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"',PoolProbability=(BaseValueConstant=0.5)))
+
+
+
+# Giving the pool to the Loot Bots
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ServiceBot_LOOT),/Game/Enemies/ServiceBot/LOOT/_Design/Character/BPChar_ServiceBot_LOOT.BPChar_ServiceBot_LOOT:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_VeryRare.ItemPool_Guns_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_04_VeryRare.ItemPool_Shields_04_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_04_VeryRare.ItemPool_GrenadeMods_04_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_Test.ItemPool_Artifacts_Test"',PoolProbability=(BaseValueConstant=0.2)))
+
+# Fix Wish
+SparkPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Shields/_Unique/InfernalWish/Att_Calc_Damage_InfernalWish_Fire.Att_Calc_Damage_InfernalWish_Fire,Value.Multiplier.BaseValueConstant,0,,0.0000001
+SparkPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Shields/_Unique/InfernalWish/Att_Calc_Damage_InfernalWish_Fire.Att_Calc_Damage_InfernalWish_Fire,Value.Scalar.BaseValueConstant,0,,0.00000001
+
+
+
+# Creating a loot pool for the Chubby Skags
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/ItemPool_Humans_Normal_DEPRECATED.ItemPool_Humans_Normal_DEPRECATED,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/GrenadeMods/_Design/_Unique/Summit/Balance/InvBalD_GM_Summit.InvBalD_GM_Summit,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/GrenadeMods/_Design/_Unique/Summit/Balance/InvBalD_GM_Summit.InvBalD_GM_Summit"',Weight=(BaseValueConstant=1.0,BaseValueScale=1.0)))
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SkagChubby),/Game/Enemies/Skag/Chubby/_Design/Character/BPChar_SkagChubby.BPChar_SkagChubby:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[0].bOverrideDropOnDeathItemPools,0,,true
+
+# Giving the pool to the Chubby Skags
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SkagChubby),/Game/Enemies/Skag/Chubby/_Design/Character/BPChar_SkagChubby.BPChar_SkagChubby_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_VeryRare.ItemPool_Guns_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_04_VeryRare.ItemPool_Shields_04_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"',PoolProbability=(BaseValueConstant=0.55)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/ItemPool_Humans_Normal_DEPRECATED.ItemPool_Humans_Normal_DEPRECATED"',PoolProbability=(BaseValueConstant=0.2)))
+
+# Shivs pool
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassPrologue),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Shiv.ItemPool_Shiv,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/OperativeSkillSCreen/Balance_DAL_PS_OperativeSkillScreen.Balance_DAL_PS_OperativeSkillScreen,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/OperativeSkillSCreen/Balance_DAL_PS_OperativeSkillScreen.Balance_DAL_PS_OperativeSkillScreen"',Weight=(BaseValueConstant=0.5)),(InventoryBalanceData=/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Vanquisher/Balance/Balance_SM_DAHL_Vanquisher.Balance_SM_DAHL_Vanquisher,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Vanquisher/Balance/Balance_SM_DAHL_Vanquisher.Balance_SM_DAHL_Vanquisher"',Weight=(BaseValueConstant=1)))
+
 
 
