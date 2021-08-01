@@ -1,0 +1,98 @@
+### Adding pearls to BL3 from EpicNNG's Redux mod, original mod link: https://www.nexusmods.com/borderlands3/mods/250
+
+### Name: Redux
+### Author: EpicNNG
+### Version: 1.1.8
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityColorFX,0,,(r=0.020,g=0.978,b=0.882,a=1)
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityLifeSpanType,0,,EDropLifeSpanType::DROP_LiveForever
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RaritySortValue,0,,7
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Streaming/Data/RarityData_MoxxiDrink.RarityData_MoxxiDrink,RarityLifeSpanType,0,,EDropLifeSpanType::DROP_LiveForever
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Streaming/Data/RarityData_MoxxiDrink.RarityData_MoxxiDrink,RaritySortValue,0,,7
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityColorOutline,0,,(r=0.020,g=0.978,b=0.882,a=1)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityFrameName,0,,Mission
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityDisplayname,0,,PEARLESCENT
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/Foil/PS_ItemLocatorStick_Foil_Rare.PS_ItemLocatorStick_Foil_Rare
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityLootAudioStinger,0,,/Game/Audio/Events/UX/HUD/Character_Global/WE_HUD_Global_Level_Up.WE_HUD_Global_Level_Up
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,ZoneMapPOIType,0,,/Game/GameData/ZoneMap/POI_Types/POI_LegendaryPickup.POI_LegendaryPickup
+
+
+# PEARL LOOT BEAM SIZE
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/Effects/Systems/Foil/PS_ItemLocatorStick_Foil_Rare.PS_ItemLocatorStick_Foil_Rare:ParticleModuleSize_0.DistributionVectorConstant_1,Constant.Y,0,,500
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/Effects/Systems/Foil/PS_ItemLocatorStick_Foil_Rare.PS_ItemLocatorStick_Foil_Rare:ParticleModuleSize_0.DistributionVectorConstant_1,Constant.X,0,,13.5
+
+# Score/price modifier
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,ItemScoreRarityModifier.BaseValueConstant,0,,3.0
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Streaming/Data/RarityData_MoxxiDrink.RarityData_MoxxiDrink,ItemScoreRarityModifier.BaseValueConstant,0,,3.0
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,MonetaryValueModifier.BaseValueAttribute,0,,GbxAttributeData'"/Game/GameData/Economy/Rarity/Att_RarityCostMultiplier_05_Legendary.Att_RarityCostMultiplier_05_Legendary"'
+
+# Stats better than legendary
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats,Common,DamageScale_6_44C1C8784B7991DCCCF68DA3127A53C0,0,,1.3
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats,Common,SpreadScale_8_D7376BDD4BB47794C6ECD995F0B66F07,0,,0.9
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats,Common,FireRateScale_11_10E7E12E4756B0EAD899BE8513F300AC,0,,1.1
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats,Common,ElementalChanceScale_14_7044338B492EDD3EB1E5E2A58FA9113B,0,,1.3
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,IntroductionLevel_12_CD05BA604180709C1AE0B299377291B6,0,,65
+
+
+# CHANGE BG
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheBoringGun/Parts/Part_SG_TOR_Barrel_Boring.Part_SG_TOR_Barrel_Boring:WeaponUseModeAspectData_0.BPWeaponFireProjectileComponent_Torgue_C_0,FireRate,0,,(BaseValue=2.85)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheBoringGun/Parts/Part_SG_TOR_Barrel_Boring.Part_SG_TOR_Barrel_Boring,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.35,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=3.8,DataTableValue=(DataTable=None,RowName="None",ValueName="None"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.25,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+# Fix BM Boos
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Defs/InvBal_Beastmaster_Mod5ShieldBooster.InvBal_Beastmaster_Mod5ShieldBooster,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_03_Rare.RarityData_03_Rare"'
+
+# Fix COM rarity 5
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/PartSets/InvBalD_CM_Ixora_BSM_01_Common.InvBalD_CM_Ixora_BSM_01_Common,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_02_Uncommon.RarityData_02_Uncommon"'
+
+# Fix COM rarity 6
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/PartSets/InvBalD_CM_Ixora_BSM_01_Common.InvBalD_CM_Ixora_BSM_01_Common,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_02_Uncommon.RarityData_02_Uncommon"'
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/PartSets/InvBalD_CM_Ixora_GUN_01_Common.InvBalD_CM_Ixora_GUN_01_Common,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_02_Uncommon.RarityData_02_Uncommon"'
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/PartSets/InvBalD_CM_Ixora_OPE_01_Common.InvBalD_CM_Ixora_OPE_01_Common,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_02_Uncommon.RarityData_02_Uncommon"'
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/PartSets/InvBalD_CM_Ixora_SIR_01_Common.InvBalD_CM_Ixora_SIR_01_Common,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_02_Uncommon.RarityData_02_Uncommon"'
+
+
+
+
+# CHANGE BG TO PEARLESCENT
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheBoringGun/Balance/Balance_SG_TOR_Boring.Balance_SG_TOR_Boring,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
+
+# CHANGE PIXIE DREAM GUN TO PEARLESCENT
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/FriendZone/Balance/Balance_SG_TED_FriendZone.Balance_SG_TED_FriendZone,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/FriendZone/Name_TED_SG_FriendZone.Name_TED_SG_FriendZone,PartName,0,,Runaway Bride
+
+# CHANGE PEARL OF KNOWLEDGE TO PEARLESCENT
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/PUK/Balance/InvBalD_Artifact_PUK.InvBalD_Artifact_PUK,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
+
+# CHANGE MOONFIRE TO PEARLESCENT
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/Balance/Balance_PS_TOR_HandCannon.Balance_PS_TOR_HandCannon,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
+
+# CHANGING BLOOD STARVED BEAST TO PEARLESCENT
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast.Balance_SM_DAL_ETech_AshenBeast,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
+
+# CHANGE HELLWALKER TO PEARLESCENT
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/Hellwalker/Balance/Balance_SG_JAK_Hellwalker.Balance_SG_JAK_Hellwalker,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
+
+# CHANGE GOOD JUJU TO PEARLESCENT
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/Balance/Balance_DAL_AR_ETech_Juju.Balance_DAL_AR_ETech_Juju,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
+
+# CHANGE HEX TO PEARLESCENT
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Seeker/Balance/InvBalD_GM_Seeker.InvBalD_GM_Seeker,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
+
+# CHANGE GHAST CALL TO PEARLESCENT
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/GrenadeMods/_Design/_Unique/FontOfDarkness/Balance/InvBalD_GM_TOR_FontOfDarkness.InvBalD_GM_TOR_FontOfDarkness,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
+
+# CHANGE FISH SLAP TO PEARLESCENT
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/GrenadeMods/FishSlap/Balance/InvBalD_GM_FishSlap.InvBalD_GM_FishSlap,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
+
+# CHANGE MUTANT TO PEARL
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Mutant/Balance/Balance_AR_JAK_Mutant.Balance_AR_JAK_Mutant,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
