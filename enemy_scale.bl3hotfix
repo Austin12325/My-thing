@@ -22,7 +22,7 @@ SparkPatchEntry,(1,2,0,),/Game/Enemies/_Shared/_Design/Balance/Table_DefaultEnem
 
 # Increasing Enemy Damage in NVHM/TVHM
 
-SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.OnePlayer_PT1,0,,(BaseValueConstant=1.65)
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.OnePlayer_PT1,0,,(BaseValueConstant=1.45)
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.TwoPlayers_PT1,0,,(BaseValueConstant=1.85)
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.ThreePlayers_PT1,0,,(BaseValueConstant=2.85)
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage.FourPlayers_PT1,0,,(BaseValueConstant=3.15)
